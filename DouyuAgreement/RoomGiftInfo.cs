@@ -34,6 +34,11 @@ namespace DouyuAgreement
         public int GiftNum { get; set; }
 
         /// <summary>
+        /// 礼物连击数
+        /// </summary>
+        public int Hits { get; set; }
+
+        /// <summary>
         /// 时间戳
         /// </summary>
         public DateTime Time { get; set; }

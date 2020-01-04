@@ -15,3 +15,11 @@ C:\Users\PSH\Downloads\SocketTest\LogR\obj\Debug\LogR.csproj.CoreCompileInputs.c
 C:\Users\PSH\Downloads\SocketTest\LogR\obj\Debug\LogR.csproj.CopyComplete
 C:\Users\PSH\Downloads\SocketTest\LogR\obj\Debug\LogR.dll
 C:\Users\PSH\Downloads\SocketTest\LogR\obj\Debug\LogR.pdb
+C:\Users\92138\Desktop\Douyu\LiveAnalysis\LogR\obj\Debug\LogR.csprojAssemblyReference.cache
+C:\Users\92138\Desktop\Douyu\LiveAnalysis\LogR\bin\Debug\LogR.dll
+C:\Users\92138\Desktop\Douyu\LiveAnalysis\LogR\bin\Debug\LogR.pdb
+C:\Users\92138\Desktop\Douyu\LiveAnalysis\LogR\bin\Debug\log4net.dll
+C:\Users\92138\Desktop\Douyu\LiveAnalysis\LogR\bin\Debug\log4net.xml
+C:\Users\92138\Desktop\Douyu\LiveAnalysis\LogR\obj\Debug\LogR.csproj.CopyComplete
+C:\Users\92138\Desktop\Douyu\LiveAnalysis\LogR\obj\Debug\LogR.dll
+C:\Users\92138\Desktop\Douyu\LiveAnalysis\LogR\obj\Debug\LogR.pdb

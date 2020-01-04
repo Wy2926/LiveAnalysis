@@ -15,3 +15,11 @@ C:\Users\PSH\Downloads\SocketTest\CC.Helper\obj\Debug\CC.Helper.csproj.CoreCompi
 C:\Users\PSH\Downloads\SocketTest\CC.Helper\obj\Debug\CC.Helper.csproj.CopyComplete
 C:\Users\PSH\Downloads\SocketTest\CC.Helper\obj\Debug\CC.Helper.dll
 C:\Users\PSH\Downloads\SocketTest\CC.Helper\obj\Debug\CC.Helper.pdb
+C:\Users\92138\Desktop\Douyu\LiveAnalysis\CC.Helper\obj\Debug\CC.Helper.csprojAssemblyReference.cache
+C:\Users\92138\Desktop\Douyu\LiveAnalysis\CC.Helper\bin\Debug\CC.Helper.dll
+C:\Users\92138\Desktop\Douyu\LiveAnalysis\CC.Helper\bin\Debug\CC.Helper.pdb
+C:\Users\92138\Desktop\Douyu\LiveAnalysis\CC.Helper\bin\Debug\Newtonsoft.Json.dll
+C:\Users\92138\Desktop\Douyu\LiveAnalysis\CC.Helper\bin\Debug\Newtonsoft.Json.xml
+C:\Users\92138\Desktop\Douyu\LiveAnalysis\CC.Helper\obj\Debug\CC.Helper.csproj.CopyComplete
+C:\Users\92138\Desktop\Douyu\LiveAnalysis\CC.Helper\obj\Debug\CC.Helper.dll
+C:\Users\92138\Desktop\Douyu\LiveAnalysis\CC.Helper\obj\Debug\CC.Helper.pdb

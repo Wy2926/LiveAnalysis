@@ -493,6 +493,7 @@ namespace DouyuAgreement
             info.GiftId = Convert.ToInt32(gift.FirstOrDefault(p=>p[0]== "gfid")[1]);
             info.UserId = Convert.ToInt32(gift.FirstOrDefault(p=>p[0]== "uid")[1]);
             info.GiftNum = Convert.ToInt32(gift.FirstOrDefault(p=>p[0]== "gfcnt")[1]);
+            info.Hits = Convert.ToInt32(gift.FirstOrDefault(p=>p[0]== "hits")[1]);
             info.NickName = gift.FirstOrDefault(p => p[0] == "nn")[1];
             info.Time = DateTime.Now;
             return info;

@@ -92,15 +92,26 @@ namespace LivePopularity
             });
         }
 
-        private void MsgShow(string msg, Color color)
+        private void MsgShow(RichTextBox richText, string msg, Color color)
         {
             this.Invoke(new Action(() =>
             {
-                this.rtbMsg.Select(this.rtbMsg.Text.Length, 0);
-                this.rtbMsg.Focus();
-                rtbMsg.SelectionColor = color;
-                rtbMsg.AppendText($"{msg}\r\n");
+                richText.Select(richText.Text.Length, 0);
+                richText.SelectionColor = color;
+                richText.AppendText($"{msg}\r\n");
+                LimitLine(richText, 10);
             }));
+        }
+
+        private void LimitLine(RichTextBox richText, int maxLength)
+        {
+            string[] lines = richText.Lines;
+            if (lines.Length >= maxLength)
+            {
+                richText.SelectionStart = 0;
+                richText.SelectionLength = richText.GetFirstCharIndexFromLine(lines.Length - maxLength);
+                richText.SelectedText = "";
+            }
         }
 
         /// <summary>
@@ -109,18 +120,26 @@ namespace LivePopularity
         /// <param name="msg"></param>
         public void MsgError(string msg)
         {
-            MsgShow(msg, Color.Red);
+            MsgShow(rtbMsg, msg, Color.Red);
         }
 
         /// <summary>
-        /// Info消息
+        /// 弹幕Info消息
         /// </summary>
         /// <param name="msg"></param>
         public void MsgInfo(string msg)
         {
-            MsgShow(msg, Color.Green);
+            MsgShow(rtbMsg, msg, Color.Green);
         }
 
+        /// <summary>
+        /// 礼物Info消息
+        /// </summary>
+        /// <param name="msg"></param>
+        public void GiftInfo(string msg)
+        {
+            MsgShow(rtbGift, msg, Color.Green);
+        }
 
         #endregion
 
@@ -136,6 +155,11 @@ namespace LivePopularity
             {
                 string result = String.Format("房间号【{2}】[{0}]: {1}", brrageMsg.Name, brrageMsg.Txt, brrageMsg.ROOM_ID);
                 MsgInfo(result);
+            };
+            douyuEntrance.GiftNotice += (RoomGiftInfo info) =>
+            {
+                string giftInfo = $"【房间:{info.RoomId}】【{info.NickName}】送了{info.GiftNum}个【{DouyuRoom.GetDouyuGift(info.GiftId).Name}】";
+                GiftInfo(giftInfo);
             };
             JSImplement.Control = this;
             Initialization();

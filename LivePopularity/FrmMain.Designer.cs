@@ -42,6 +42,7 @@
             this.btnRoomAdd = new System.Windows.Forms.Button();
             this.txtRoomId = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.rtbGift = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRooms)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,7 +55,7 @@
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dgvRooms.Location = new System.Drawing.Point(-29, 139);
+            this.dgvRooms.Location = new System.Drawing.Point(13, 139);
             this.dgvRooms.Margin = new System.Windows.Forms.Padding(4);
             this.dgvRooms.Name = "dgvRooms";
             this.dgvRooms.RowHeadersWidth = 51;
@@ -93,7 +94,7 @@
             // lblIpsNums
             // 
             this.lblIpsNums.AutoSize = true;
-            this.lblIpsNums.Location = new System.Drawing.Point(-32, 38);
+            this.lblIpsNums.Location = new System.Drawing.Point(13, 40);
             this.lblIpsNums.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIpsNums.Name = "lblIpsNums";
             this.lblIpsNums.Size = new System.Drawing.Size(68, 15);
@@ -122,7 +123,7 @@
             // 
             // rtbMsg
             // 
-            this.rtbMsg.Location = new System.Drawing.Point(948, 139);
+            this.rtbMsg.Location = new System.Drawing.Point(904, 139);
             this.rtbMsg.Margin = new System.Windows.Forms.Padding(4);
             this.rtbMsg.Name = "rtbMsg";
             this.rtbMsg.Size = new System.Drawing.Size(492, 686);
@@ -172,11 +173,20 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(115, 34);
+            this.comboBox1.Location = new System.Drawing.Point(136, 38);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(141, 23);
             this.comboBox1.TabIndex = 9;
+            // 
+            // rtbGift
+            // 
+            this.rtbGift.Location = new System.Drawing.Point(375, 139);
+            this.rtbGift.Margin = new System.Windows.Forms.Padding(4);
+            this.rtbGift.Name = "rtbGift";
+            this.rtbGift.Size = new System.Drawing.Size(368, 686);
+            this.rtbGift.TabIndex = 14;
+            this.rtbGift.Text = "";
             // 
             // FrmMain
             // 
@@ -187,6 +197,7 @@
             this.Controls.Add(this.lblIpsNums);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.rtbGift);
             this.Controls.Add(this.rtbMsg);
             this.Controls.Add(this.txtIpNums);
             this.Controls.Add(this.btnDelete);
@@ -218,6 +229,7 @@
         private System.Windows.Forms.Button btnRoomAdd;
         private System.Windows.Forms.TextBox txtRoomId;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.RichTextBox rtbGift;
     }
 }
 
